@@ -1,20 +1,18 @@
-name: First Workflow
-
+name: mon premier workflow
 on: workflow_dispatch
-
-jobs:
-
-  first-job:
-
+jobs: 
+  first-job: 
     runs-on: ubuntu-latest
-
     steps:
-
-      - name: Print greeting
-
-        run: echo "Hello Rabah!"
-
-      - name: Print goodbye
-
-        run: echo "Done - bye!"
- 
+      - name: afficher bonjour
+        run: echo "Bonjour tout le monde"
+      - name: Afficher bonsoir
+        run: echo "Bonsoir tout le monde
+       
+  second-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: afficher github
+        run: echo "Github action est passionant"
+      - name: Afficher terminer
+        run: echo "Github action est termine"
